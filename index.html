@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="sr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekstura Restaurant | Podgorica</title>
+  <meta name="description" content="Tekstura Restaurant in Podgorica — fine dining, warm atmosphere, authentic flavors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="brand-logo">
+        <span class="brand-logo__text">TEKSTURA</span>
+        <span class="brand-logo__sub">RESTROBAR • PODGORICA</span>
+      </a>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">O nama</a></li>
+          <li><a href="#gallery" class="nav__link" data-i18n="nav.gallery">Atmosfera</a></li>
+          <li><a href="#reviews" class="nav__link" data-i18n="nav.reviews">Utisci</a></li>
+          <li><a href="#info" class="nav__link" data-i18n="nav.info">Informacije</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="sr">SR</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+
+        <a href="tel:+38269373000" class="btn btn--outline btn--sm header__phone">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+382 69 373 000</span>
+        </a>
+
+        <button class="burger-btn" id="burger-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="assets/img_01.jpg" alt="Tekstura Restaurant Interior" class="hero__img">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="stars">★★★★★</span>
+          <span class="rating-val">4.9</span>
+          <span class="rating-count" data-i18n="hero.reviews_count">(193 recenzije)</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-i18n="hero.title_line1">Umetnost okusa &</span>
+          <span class="hero__title-line hero__title-italic" data-i18n="hero.title_line2">toplina ambijenta</span>
+        </h1>
+
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          Elegancija u svakom detalju. Mesto susreta vrhunske kuhinje i prijatnih trenutaka u Podgorici.
+        </p>
+
+        <div class="hero__cta">
+          <a href="tel:+38269373000" class="btn btn--primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span data-i18n="hero.btn_reserve">Rezervišite sto</span>
+          </a>
+          <a href="#info" class="btn btn--glass" data-i18n="hero.btn_location">Kako do nas</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint">
+        <span data-i18n="hero.scroll">Skrolujte</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About / Atmosphere Section -->
+    <section class="section about" id="about">
+      <div class="container grid grid--2col grid--align-center">
+        <div class="about__text-block reveal">
+          <span class="tagline" data-i18n="about.tagline">DOŽIVLJAJ TEKSTURE</span>
+          <h2 class="section-title" data-i18n="about.title">Topao ambijent stvoren za trenutke uživanja</h2>
+          <p class="paragraph" data-i18n="about.desc">
+            Tekstura Restaurant spaja moderan stil, opuštenu atmosferu i pažljivo pripremljena jela. Bilo da planirate intimnu večeru, poslovni susret ili opušteno veče uz čašu odabranog vina, naš tim stvara iskustvo kojem ćete se rado vraćati.
+          </p>
+          <div class="about__features">
+            <div class="feature-item">
+              <span class="feature-item__num">4.9</span>
+              <span class="feature-item__text" data-i18n="about.feat1">Ocena naših gostiju</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-item__num">100%</span>
+              <span class="feature-item__text" data-i18n="about.feat2">Gostoprimstvo i posvećenost</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visuals reveal">
+          <div class="image-stack">
+            <div class="image-stack__item image-stack__item--main">
+              <img src="assets/img_01.jpg" alt="Restoran enterijer" loading="lazy">
+            </div>
+            <div class="image-stack__item image-stack__item--accent">
+              <img src="assets/img_03.jpg" alt="Čaša vina u Teksturi" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery / Highlights Showcase -->
+    <section class="section gallery-showcase" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tagline" data-i18n="gallery.tagline">GASTRONOMIJA & AMBIJENT</span>
+          <h2 class="section-title" data-i18n="gallery.title">Harmonija mirisa i ukusa</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card gallery-card--large reveal">
+            <img src="assets/img_02.jpg" alt="Sočni odrezak na drvenoj podlozi" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__category" data-i18n="gallery.cat1">Specijalitet kući</span>
+              <h3 class="gallery-card__title" data-i18n="gallery.item1_title">Odrezak na žaru & sveže bilje</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal">
+            <img src="assets/img_04.jpg" alt="Pasta sa kozicama i začinskim biljem" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__category" data-i18n="gallery.cat2">Pasta & plodovi mora</span>
+              <h3 class="gallery-card__title" data-i18n="gallery.item2_title">Pasta sa kozicama</h3>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal">
+            <img src="assets/img_03.jpg" alt="Čaša crvenog vina" loading="lazy">
+            <div class="gallery-card__overlay">
+              <span class="gallery-card__category" data-i18n="gallery.cat3">Vinska karta</span>
+              <h3 class="gallery-card__title" data-i18n="gallery.item3_title">Odabrana vina i atmosferične večeri</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tagline" data-i18n="reviews.tagline">REČ NAŠIH GOSTIJU</span>
+          <h2 class="section-title" data-i18n="reviews.title">Iskustva koja pamte</h2>
+          <div class="rating-hero-badge">
+            <span class="stars">★★★★★</span>
+            <span class="score">4.9 / 5.0</span>
+            <span class="count" data-i18n="reviews.google_count">Google recenzije (193)</span>
+          </div>
+        </div>
+
+        <div class="reviews-slider reveal">
+          <div class="reviews-track" id="reviews-track">
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div>
+                  <h3 class="review-card__author">Daria Shevtsova</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+                <span class="review-card__badge">Google</span>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.r1">
+                Predivno mesto. Imali smo tako lep, atmosferski ručak i večeru ovde. Hrana je bila ukusna, a posebno bih izdvojila odrezak i grčku salatu. Uz čašu dobrog vina, divnu muziku i miran ambijent, bilo je to zaista opuštajuće veče. Naš konobar Ivan bio je izuzetno srdačan i gostoljubiv. Hvala vam! Rado ćemo se vratiti.
+              </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div>
+                  <h3 class="review-card__author">Stefan Planic</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+                <span class="review-card__badge">Google</span>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.r2">
+                Tekstura impresionira od početka do kraja. Oval sa lokalnim specijalitetima se posebno ističe – vrhunski proizvodi lokalnih proizvođača, prelepo serviran i pun autentičnih ukusa. Pasta sa kozicama je jednako izuzetna, savršeno izbalansirana. Besprekorna čistoća i profesionalno osoblje čine svaku posetu nezaboravnom.
+              </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div>
+                  <h3 class="review-card__author">Leri B</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+                <span class="review-card__badge">Google</span>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.r3">
+                Sjajno iskustvo! Atmosfera je bila prijatna, a hrana odlična. Cezar salata je bila ogromna i zaista ukusna. Pica je bila sveža i puna ukusa, a cene su veoma razumne.
+              </p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div>
+                  <h3 class="review-card__author">Filipe Duarte</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+                <span class="review-card__badge">Google</span>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.r4">
+                Otmeno mesto, ali i dalje veoma ugodno. Probao sam neka crnogorska jela i bila su fantastična. Brza usluga, ljubazno osoblje, neverovatna hrana!
+              </p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+              <div class="review-card__header">
+                <div>
+                  <h3 class="review-card__author">Yuval Assayag</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+                <span class="review-card__badge">Google</span>
+              </div>
+              <p class="review-card__text" data-i18n="reviews.r5">
+                Hrana je bila dobra. Naručili smo špagete sa lososom, grilovani odrezak i salatu. Odrezak je bio dobar, a usluga je veoma dobra. Restoran je prelep i udoban.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info & Map Section -->
+    <section class="section info-section" id="info">
+      <div class="container grid grid--2col">
+        <div class="info-card reveal">
+          <span class="tagline" data-i18n="info.tagline">LOKACIJA & RADNO VREME</span>
+          <h2 class="section-title" data-i18n="info.title">Dobrodošli u Teksturu</h2>
+
+          <div class="info-group">
+            <h3 class="info-group__label" data-i18n="info.address_label">Adresa</h3>
+            <p class="info-group__value">16 Pera Šoća, Podgorica 81000, Montenegro</p>
+            <a href="https://maps.google.com/?q=16+Pera+Šoća,+Podgorica+81000,+Montenegro" target="_blank" rel="noopener" class="link-btn" data-i18n="info.open_maps">Otvori na Google Mapi &rarr;</a>
+          </div>
+
+          <div class="info-group">
+            <h3 class="info-group__label" data-i18n="info.hours_label">Radno vreme</h3>
+            <ul class="hours-list">
+              <li><span data-i18n="info.mon_sat">Ponedeljak – Subota:</span> <strong>08:00 – 00:00</strong></li>
+              <li><span data-i18n="info.sun">Nedelja:</span> <strong class="text-accent" data-i18n="info.closed">Zatvoreno</strong></li>
+            </ul>
+          </div>
+
+          <div class="info-group">
+            <h3 class="info-group__label" data-i18n="info.phone_label">Telefon / Rezervacije</h3>
+            <p class="info-group__value"><a href="tel:+38269373000" class="phone-link">+382 69 373 000</a></p>
+          </div>
+        </div>
+
+        <div class="map-wrapper reveal">
+          <iframe 
+            title="Tekstura Restaurant Location Map"
+            src="https://maps.google.com/maps?q=16%20Pera%20%C5%A0o%C4%87a%2C%20Podgorica%2081000&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout Reservation Card -->
+    <section class="section reservation-cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-box__content">
+            <h2 class="cta-box__title" data-i18n="cta.title">Planirate posebnu večeru?</h2>
+            <p class="cta-box__desc" data-i18n="cta.desc">Rezervišite Vaš sto unapred i prepustite se nezaboravnom gastronomskom doživljaju.</p>
+          </div>
+          <div class="cta-box__action">
+            <a href="tel:+38269373000" class="btn btn--primary btn--lg">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+382 69 373 000</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Bottom Sticky Bar -->
+  <div class="mobile-bar">
+    <a href="tel:+38269373000" class="btn btn--primary btn--full">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span data-i18n="mobile.call">Pozovite restoran</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand-logo__text">TEKSTURA</span>
+        <p class="footer__address">16 Pera Šoća, Podgorica 81000, Montenegro</p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/tekstura_restaurant/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="footer__copy">
+        <p>&copy; <span id="year"></span> Tekstura Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
